@@ -63,6 +63,7 @@ form button:hover {
   background: rgb(0, 0, 0);
   padding: 10px 20px;
   color: rgb(255, 249, 249);
+  border: 5px solid var(--primary-color);
 }
 
 h1{
@@ -86,12 +87,15 @@ h1{
 #console {
   width: 100%;
   height: 200px;
-  border: 1px solid #ccc;
-  background-color: #f8f9fa;
+  border: 5px solid var(--primary-color);
+  background-color: #000000;
   overflow: auto;
   padding: 10px;
   font-family: monospace;
   font-size: 14px;
+  color: white;
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
 h2 {
@@ -109,11 +113,29 @@ h2 {
 
 nav{
   font-family: 'Open sans', sans-serif;
-  background-color: #fff;
+  background-color: #0a0a0a;
   border: 3px solid black;
   text-align: center;
 
   
 }
 
+@media screen and (max-width: 768px) {
 
+  .tabela{
+    margin: 0%;
+    margin-bottom: 50px;
+  }
+  .hist{
+    margin: 0%;
+    margin-bottom: 30px;
+  }
+  .text{
+    text-align: justify;
+    margin: 5px;
+  }
+  .nav{
+    text-align: center;
+    justify-content: center;
+  }
+}
